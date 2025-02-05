@@ -9,8 +9,6 @@ class NewValidInputs:
         valid_inputs_json = '{"email": "","name": " Iana","password": "187654" }'
 
         valid_inputs = json.loads(valid_inputs_json)
-        print(type(valid_inputs))  # dict
-
         lst = ['l', 't', 'a', 'M', 'i', 'p', '1', '85']
         new_email_input = random.choices(lst, k=5)
         new_full_email = ''.join(new_email_input)

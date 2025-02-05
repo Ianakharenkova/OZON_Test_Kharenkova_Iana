@@ -4,7 +4,6 @@ class TestGetPlaceName:
     def __init__(self):
         pass
 
-
     def get_place_name_on_code(self):
         url="https://api.zippopotam.us/RU/440047"
         result = requests.get(url)

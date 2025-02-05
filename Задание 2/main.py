@@ -18,7 +18,7 @@ renault_Logan = Car(name="Рено Логан", brand="bmw", color="красны
 
 my_cars = [bmw_X7, renault_Clio3, bmw_X6, renault_Logan]
 
-new_color=input("Введите цвет для фильтра: ")
+new_color=input("Введите цвет Авто для фильтра: ")
 
 def filter_colors(car: Car):
     if car.color == new_color:
@@ -28,3 +28,4 @@ def filter_colors(car: Car):
 
 carFilter = filter(filter_colors, my_cars)
 print(*carFilter)
+
