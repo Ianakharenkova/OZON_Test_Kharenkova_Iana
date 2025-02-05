@@ -1,7 +1,31 @@
 usersapi_doRegister.py
 
-Для теста запроса методом post был выбран 
+Для теста запроса методом post 
+http://users.bugred.ru/tasks/rest/doregister 
 и метод doRegister для регистрации пользователя.
+
+Примеры вызова REST (JSON)
+Пример 1. Создание нового пользователя
+Запрос:
+
+{
+    "email": "milli@mail.ru",
+    "name": " Машенька",
+    "password": "1"
+}
+Ответ:
+
+{
+    "name": " Машенька",
+    "avatar": "http://users.bugred.ru//tmp/default_avatar.jpg",
+    "password": "4dff4ea340f0a823f15d3f4f01ab62eae0e5da579ccb851f8db9dfe84c58b2b37b89903a740e1ee172da793a6e79d560e5f7f9bd058a12a280433ed6fa46510a",
+    "birthday": 0,
+    "email": "milli@mail.ru",
+    "gender": "",
+    "date_start": 0,
+    "hobby": ""
+}
+
 на вход принимает обязательные поля email, name, password.
 В ответ, при успешной регистрации приходит информация по сохраненному клиенту
 
@@ -11,4 +35,24 @@ usersapi_doRegister.py
 
 
 в zippopotamapi_get_place_name.py
+https://api.zippopotam.us/
+
+Example: api.zippopotam.us/us/90210
+
+JSON Result:
+{
+   "post code": "90210",
+   "country": "United States",
+   "country abbreviation": "US",
+   "places": [
+       {
+           "place name": "Beverly Hills",
+           "longitude": "-118.4065",
+           "state": "California",
+           "state abbreviation": "CA",
+           "latitude": "34.0901"
+       }
+   ]
+}
+
 тестирую get запрос, проверяя статус-код и совпадение поля региона.
